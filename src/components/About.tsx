@@ -24,7 +24,7 @@ export default function About() {
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <span className="text-xs tracking-[0.3em] uppercase text-gold-400 font-medium">
               About Me
@@ -57,7 +57,7 @@ export default function About() {
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="grid grid-cols-1 gap-6"
           >
             {stats.map((stat, i) => (

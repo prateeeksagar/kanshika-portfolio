@@ -28,7 +28,7 @@ export default function Navbar() {
       ref={navRef}
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
       className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-5 transition-all duration-500"
       style={{
         backdropFilter: "blur(0px)",
